@@ -3,18 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <title>Submit Request Form</title>
+
+ <!-- 외부 페이지의 썸네일과 정보를 설정 -->
   <meta property="og:title" content="YISS/WAY Transcript Request Form">
-  <meta property="og:description" content="This is a form for requesting transcripts at YISS/WAY.">
-  <meta property="og:image" content="none">
-  <meta property="og:url" content="https://tally.so/r/3lVoZN">
-  <script type="text/javascript"> // Reset SDK
-  Kakao.init('076a6f0b2741c96739347129b73ab5cf');  // Kakao JavaScript Key
+  <meta property="og:description" content="Click the button below to submit your transcript request.">
+  <meta property="og:image" content="https://devcms.yonsei.ac.kr/_res/winter/etc/transcript_request_thumbnail.png">
+  <meta property="og:url" content="https://your-external-page.com">
+
+  <!-- 카카오 SDK 초기화 (필요시 사용) -->
+  <script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+  <script type="text/javascript">
+    Kakao.init('076a6f0b2741c96739347129b73ab5cf');  // 카카오 JavaScript 키
   </script>
 </head>
 <body>
-  <script>
-    window.location.href = "https://tally.so/r/3lVoZN";
-  </script>
+  <h1>Submit Your Transcript Request</h1>
+  <p>Click the button below to open the request form:</p>
+  <button onclick="window.location.href='https://tally.so/r/3lVoZN';">Submit Request Form</button>
+  
+  <p>After clicking the button, you will be redirected to the form page.</p>
 </body>
 </html>
